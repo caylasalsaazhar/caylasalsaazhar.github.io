@@ -1,0 +1,176 @@
+---
+title: "Analisis Pengaruh Ekspor dan Impor terhadap Pertumbuhan Ekonomi di Indonesia (2013 - 2023"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Cayla Salsa Azhar"
+date: 2025-01-03
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+---
+
+![](poltekapp.jpg)
+
+## Pendahuluan
+
+### Latar belakang
+
+Pertumbuhan ekonomi merupakan salah satu indikator utama untuk menilai keberhasilan pembangunan suatu negara. Di Indonesia, pertumbuhan ekonomi mempunyai peranan strategis dalam meningkatkan kesejahteraan masyarakat, mengurangi kemiskinan dan menciptakan lapangan kerja. Salah satu penyumbang terbesar pertumbuhan ekonomi adalah sektor perdagangan internasional, khususnya impor dan ekspor.
+
+Ekspor merupakan mesin utama perekonomian, meningkatkan penerimaan devisa, mendorong pertumbuhan industri dalam negeri, dan meningkatkan pangsa pasar global. Di sisi lain, impor berperan penting dalam memenuhi kebutuhan bahan baku, teknologi, dan barang modal, terutama yang tidak tersedia di dalam negeri, dan pada akhirnya menunjang aktivitas manufaktur negara.
+
+Namun hubungan antara ekspor dan impor dengan pertumbuhan ekonomi seringkali dipengaruhi oleh berbagai faktor, antara lain kebijakan perdagangan, fluktuasi nilai tukar, harga komoditas global, dan kondisi pasar internasional. Ketergantungan Indonesia pada ekspor bahan mentah seperti kelapa sawit, batu bara, dan karet membuat perekonomian dalam negeri rentan terhadap fluktuasi harga di pasar dunia. Selain itu, peningkatan impor barang konsumsi dapat menyebabkan defisit perdagangan yang pada akhirnya mempengaruhi stabilitas perekonomian.
+
+Dalam konteks ini, penting untuk menganalisis dampak impor dan ekspor terhadap pertumbuhan ekonomi Indonesia. Pemahaman pola dan dampak memungkinkan pemerintah mengembangkan kebijakan yang tepat untuk mengoptimalkan peran perdagangan internasional dalam mendorong pembangunan ekonomi berkelanjutan.
+
+Tujuan penelitian ini adalah untuk mengetahui sejauh mana kontribusi impor dan ekspor terhadap pertumbuhan ekonomi Indonesia dan mengidentifikasi faktor-faktor yang mempengaruhi hubungan tersebut. Oleh karena itu, hasil analisis ini diharapkan dapat memberikan rekomendasi yang bermanfaat bagi pengambilan kebijakan di bidang perdagangan dan perekonomian.
+
+------------------------------------------------------------------------
+
+### Ruang lingkup
+
+Penelitian ini mencakup analisis kuantitatif mengenai pengaruh ekspor dan impor terhadap pertumbuhan ekonomi Indonesia. Fokus utama memahami hubungan kausalitas, kontribusi relatif, serta dampak fluktuasi ekspor dan impor terhadap produk domestik bruto (PDB). Periode penelitian mencakup data historis selama 10 tahun terakhir, seperti tahun 2013–2023, untuk mengamati tren dan perubahan struktural dalam perdagangan internasional serta dampaknya terhadap perekonomian nasional. Penelitian ini berfokus pada ekonomi Indonesia secara agregat, dengan pembahasan tambahan terkait sektor-sektor utama dalam ekspor, seperti agribisnis, pertambangan, dan manufaktur, serta sektor impor, terutama bahan baku, barang modal, dan barang konsumsi.
+
+Variabel yang dianalisis meliputi nilai ekspor, nilai impor, dan neraca perdagangan sebagai variabel independen, sedangkan tingkat pertumbuhan ekonomi (PDB) sebagai variabel dependen. Faktor-faktor lain seperti nilai tukar rupiah, tingkat inflasi, harga komoditas internasional, dan kebijakan perdagangan dimasukkan sebagai variabel kontrol. Penelitian ini menggunakan pendekatan ekonometrik, seperti analisis regresi linier berganda atau model Vector Autoregression (VAR), untuk mengevaluasi hubungan antara variabel-variabel tersebut. World Bank digunakan sebagai sumber utama data.
+
+### Rumusan masalah
+
+1.  Bagaimana pengaruh ekspor terhadap pertumbuhan ekonomi Indonesia
+2.  Bagaimana pengaruh impor terhadap pertumbuhan ekonomi Indonesia?
+3.  Sejauh mana hubungan antara ekspor dan impor dengan pertumbuhan ekonomi nasional?
+4.  Faktor-faktor apa saja yang memengaruhi hubungan antara ekspor, impor, dan pertumbuhan ekonomi di Indonesia?
+
+### Tujuan dan manfaat penelitian
+
+Tujuan penelitian ini adalah menganalisis dampak impor dan ekspor terhadap pertumbuhan ekonomi di Indonesia. penelitian ini juga bertujuan untuk mengetahui hubungan ekspor, impor dengan pertumbuhan ekonomi nasional serta menjelaskan faktor-faktor yang mempengaruhi hubungan tersebut. sedangkan memiliki manfaat Secara akademis, penelitian ini dapat memperkaya literatur ekonomi, khususnya mengenai pertumbuhan ekonomi dan perdagangan internasional. Ini juga dapat berfungsi sebagai referensi untuk penelitian yang akan datang. Penelitian ini dapat membantu para pembuat kebijakan membuat strategi perdagangan yang mendukung pertumbuhan ekonomi yang berkelanjutan. Studi ini juga akan membantu para pelaku ekonomi memahami dampak perdagangan internasional terhadap perekonomian negara dan bagaimana memaksimalkan peluang ekspor dan impor. Secara lebih luas, tujuan dari penelitian ini adalah untuk meningkatkan pemahaman masyarakat tentang seberapa penting perdagangan internasional bagi kesejahteraan perekonomian nasional.
+
+### Package
+
+Ini tidak wajib ada di packages yang digunakan antara lain sebagai berikut:
+
+```{r}
+#/warning: false
+#/echo: true
+library(tidyverse)
+library(readxl)
+```
+
+## Studi pustaka
+
+1.  Ekspor
+
+Ekspor adalah kegiatan mengeluarkan barang dari daerah pabean. Menurut Lipsey (1995), ekspor dapat diartikan sebagai total penjualan barang yang dapat dihasilkan oleh suatu negara, kemudian diperdagangkan kepada negara lain dengan tujuan mendapatkan devisa. Suatu negara dapat mengekspor barang-barang yang dihasilkannya ke negara lain yang tidak dapat menghasilkan barang-barang yang dihasilkan negara pengekspor. Menurut Salvatore (1997), terdapat beberapa alasan sehingga dilakukannya ekspor oleh suatu negara, antara lain:
+
+a\. Keinginan untuk memenuhi berbagai kebutuhan yang tidak dapat dipenuhi dari produksi atau hasil dalam negeri, termasuk kebutuhan yang dapat diproduksi namun diperlukan biaya yang lebih tinggi dibandingkan jika diproduksi di luar negeri.
+
+b\. Keinginan suatu negara untuk memperluas pemasaran komoditas domestik untuk meningkatkan sumber devisa bagi kegiatan pembangunan.
+
+2.  Impor
+
+Impor adalah kegiatan ekonomi pembelian barang dan jasa dari luar negeri untuk memenuhi kebutuhan dalam negeri. Dalam perdagangan internasional, impor terjadi ketika suatu negara tidak dapat memproduksi barang atau jasa tertentu secara efisien, atau ketika barang yang diproduksi di negara lain memiliki kualitas yang lebih baik atau harga yang lebih kompetitif. Impor mempunyai peranan penting dalam menunjang kegiatan perekonomian masyarakat. Misalnya, bahan baku dan barang modal impor yang sering digunakan dalam proses produksi dalam negeri dan mendukung pertumbuhan sektor industri. Pemerintah biasanya mengatur aktivitas impor melalui kebijakan tarif, kuota, atau peraturan lainnya untuk melindungi industri dalam negeri dan menjaga keseimbangan ekonomi.
+
+3.  Pertumbuhan Ekonomi
+
+Pertumbuhan ekonomi Indonesia yang dipengaruhi oleh ekspor dan impor menunjukkan dinamika yang kompleks. Ekspor berkontribusi secara signifikan terhadap peningkatan pendapatan negara, terutama dari sektor komoditas utama seperti batu bara, minyak kelapa sawit, dan karet. Namun, ketergantungan pada komoditas mentah membuat ekonomi Indonesia rentan terhadap fluktuasi harga global. Di sisi lain, impor memainkan peran penting dalam memenuhi kebutuhan bahan baku dan barang modal untuk mendukung aktivitas produksi domestik. Ketidakseimbangan antara ekspor dan impor, seperti tingginya impor barang konsumsi dibandingkan nilai ekspor, dapat menyebabkan defisit neraca perdagangan yang berpengaruh pada stabilitas ekonomi. Oleh karena itu, optimalisasi ekspor barang bernilai tambah serta pengelolaan impor yang efektif diperlukan untuk mendorong pertumbuhan ekonomi yang berkelanjutan.
+
+## Metode penelitian
+
+### Data
+
+Berikut adalah data yang digunakan sebagai objek penelitian, data dibawah ini merupakan data nilai ekspor, impor, dan pertumbuhan Ekonomi di indonesia dengan satuan USD.
+
+| Tahun | X (Ekspor)       | Y (impor)        | U (pertumbuhan ekonomi) |
+|-------|------------------|------------------|-------------------------|
+| 2013  | 23,9235763793605 | 24,7137962959288 | 5,5572636889101         |
+| 2014  | 23,6659845969367 | 24,414190988586  | 5,006668425755          |
+| 2015  | 21,1601792598059 | 20,7774609817235 | 4,87632230022123        |
+| 2016  | 19,0889938536664 | 18,3323479486654 | 5,03306918280177        |
+| 2017  | 20,1773044351106 | 19,17819263535   | 5,06978590134916        |
+| 2018  | 21,0027464972455 | 22,0715624579547 | 5,17429153955024        |
+| 2019  | 18,5915277970883 | 19,0362497386225 | 5,01928768046282        |
+| 2020  | 17,3311682848923 | 15,6410071153504 | -2,06551182934165       |
+| 2021  | 21,4165556390653 | 18,7882026359018 | 3,70288562827751        |
+| 2022  | 24,5037442007268 | 20,9621544809476 | 5,30741934775764        |
+| 2023  | 21,7465817671945 | 19,5690849947929 | 5,04810577067288        |
+
+Penelitian ini menggunakan data sekunder dengan bentuk data time series 2013-2023, data yang dipakai ialah data yang telah diolah dengan sumber world Development indicators.
+
+```{r}
+setwd("F:/Tugas metopel")
+Metopen2<-read_excel("tabeleksporimpor.xlsx")
+library(readxl)
+reg1<-lm(data =Metopen2, X~Y )
+summary(reg1)
+
+library(readxl)
+Metopen2$m <-resid(reg1)
+plot(Metopen2$X,Metopen2$Y, ylab = "error",col= 'purple',pch=16)
+abline(h=0)
+```
+
+Plot pengaruh terhadap nilai Ekspor
+
+```{r}
+library(readxl)
+Metopen2$m <-resid(reg1)
+plot(Metopen2$X,Metopen2$Y,ylab = "error",col= 'pink', pch=16)
+abline(h=0)
+```
+
+Plot pengaruh terhadap nilai Impor
+
+### Metode analisis
+
+Penelitian ini menggunakan analisis regresi linier sederhana untuk melihat pengaruh variabel independen Y terhadap variabel dependen X :
+
+$$
+X_ =\beta_0 + \beta_1 Y+\epsilon
+$$ di mana $\beta_0$ adalah intercept, $\beta_1$ adalah koefisien regresi, dan $\epsilon$ adalah error. Pengujian dilakukan dengan uji $t$ untuk mengetahui signifikansi pengaruh variabel independen, dan uji $F$ untuk menilai signifikansi model secara keseluruhan. Kesesuaian model dievaluasi menggunakan nilai $R^2$ dan adjusted $R^2$ yang menunjukkan seberapa baik variabel independen menjelaskan variabel dependen. Hasil analisis ini digunakan untuk menginterpretasikan hubungan antara Y dan X.
+
+## Pembahasan
+
+### Pembahasan masalah
+
+| Parameter               | Koefisien  | Std,error | t-value | p-value | kesimpulan           |
+|---------------------------|------------------------------|--------------------------------|---------------------------|-------------------------------------------|-------------------------------|
+| Intercept               | 6,9623     | 3,3496    | 2,079   | 0,06742 | Tidak signifikan (.) |
+| Y (koefisien)           | 0,6981     | 0,1636    | 4,268   | 0,00209 | Signifikan (\*\*)    |
+| R-Squared               | 0,6693     |           |         |         |                      |
+| Adjusted R-squared      | 0,6325     |           |         |         |                      |
+| Residual Standard Error | 1,383      |           |         |         |                      |
+| F-statistic             | 18,21      |           |         |         |                      |
+
+$$X=6.9623+0.6981×Y$$
+
+Di mana, Intercept (6.9623) menunjukkan nilai prediksi X ketika nilai Y sama dengan nol. Koefisien untuk Y (0.6981) menunjukkan bahwa setiap kenaikan satu unit pada Y akan meningkatkan X sebesar 0.6981 unit. Residual merupakan selisih antara nilai aktual dan nilai yang diprediksi oleh model. Berdasarkan hasil analisis, residual memiliki distribusi yang cukup baik dengan nilai minimum -1.6607 dan maksimum 2.9070. Median residual sebesar -0.3077 menunjukkan bahwa sebagian besar residual dekat dengan nol, menandakan model memprediksi dengan baik. Berdasarkan kuartil, 25% residual berada di bawah -0.6113 dan 25% sisanya berada di atas 0.4742, menunjukkan bahwa sebagian besar residual terdistribusi dengan baik, meskipun ada beberapa nilai ekstrem (outlier) pada bagian residual positif.
+
+Koefisien regresi untuk intercept adalah 6.9623, yang berarti ketika Y = 0, nilai prediksi X adalah 6.9623. Sedangkan koefisien untuk Y adalah 0.6981, yang menunjukkan bahwa setiap kenaikan satu unit pada Y akan menyebabkan kenaikan 0.6981 unit pada X.
+
+### Analisis masalah
+
+Hasil regresinya adalah
+
+```{r}
+library(readxl)
+reg<-lm(data = Metopen2, Y~X )
+summary(reg1)
+```
+
+Analisis regresi ini bertujuan untuk mengidentifikasi hubungan antara variabel Y dan X. Hasil regresi menunjukkan bahwa variabel Y memiliki pengaruh signifikan terhadap X, dengan koefisien regresi sebesar 0.6981. Artinya, setiap kenaikan satu unit pada Y akan meningkatkan X sebesar 0.6981 unit. Uji signifikansi menunjukkan bahwa koefisien Y signifikan (p-value = 0.00209), sementara intercept tidak signifikan (p-value = 0.06742). Model ini mampu menjelaskan 66.93% variasi dalam X (Multiple R-squared = 0.6693), dengan residual standard error 1.383 yang menunjukkan akurasi prediksi model. Uji F juga menunjukkan bahwa model regresi secara keseluruhan signifikan (p-value = 0.002087). Secara keseluruhan, model regresi ini menunjukkan hubungan yang signifikan dan dapat digunakan untuk prediksi X berdasarkan Y.
+
+## Kesimpulan
+
+Kesimpulan mengenai pengaruh ekspor dan impor terhadap risiko ekonomi menunjukkan bahwa keduanya memiliki dampak yang saling terkait. Ekspor dapat meningkatkan pendapatan negara dan mendorong pertumbuhan ekonomi, namun terlalu bergantung pada ekspor dapat membuat ekonomi rentan terhadap fluktuasi harga global dan permintaan internasional. Di sisi lain, impor memungkinkan pemenuhan kebutuhan dalam negeri yang tidak dapat diproduksi secara efisien, namun jika impor lebih tinggi daripada ekspor, dapat menyebabkan defisit neraca perdagangan yang berisiko terhadap kestabilan mata uang dan cadangan devisa. Oleh karena itu, keseimbangan antara ekspor dan impor perlu dijaga untuk meminimalkan risiko ekonomi yang timbul akibat ketergantungan pada perdagangan internasional.
+
+## Referensi
+
+**Sari, A. F., & Sudiana, I. N. (2018).** *Pengaruh Ekspor dan Impor Terhadap Pertumbuhan Ekonomi Indonesia: Pendekatan Model ECM (Error Correction Model)*. Jurnal Ekonomi dan Pembangunan, 26(2), 134-145.
+
+**Haryanto, E., & Adi, R. (2019).** *Analisis Pengaruh Ekspor dan Impor Terhadap Pertumbuhan Ekonomi di Indonesia Tahun 2000-2018*. Jurnal Ekonomi dan Keuangan, 23(3), 215-227.
+
+**Pratiwi, D., & Arifin, Z. (2020).** *Pengaruh Ekspor dan Impor terhadap Pertumbuhan Ekonomi di Negara Berkembang: Kasus Indonesia*. Jurnal Pembangunan Ekonomi, 28(1), 88-102.
+
+**Gunawan, W. (2021).** *Dampak Ekspor dan Impor terhadap Pertumbuhan Ekonomi Indonesia: Analisis Data Panel*. Jurnal Ekonomi Indonesia, 34(4), 324-335.
+
+**WDI.** *(World Development Indicators) Tahun 2013 - 2023 tentang GDP Growth Dan Nilai ekspor & impor.*
